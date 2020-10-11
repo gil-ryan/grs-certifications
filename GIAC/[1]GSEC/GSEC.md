@@ -1,16 +1,9 @@
-# Global Information Assurance Certification
+# GSEC
 
-Eventually I will fill this section in with some introductory segment for GIAC. However, for now we're going to just jump right into it. I need to pass these tests!
+Security is a top IT-certification field. This is a full course of what is needed to pass the exam.
 
 ## Table of Contents
 
-### Starting Exams
-
-* [GSEC - Security Essentials](./GSEC/GSEC.md)
-* [GCIH - Incident Handler](./GCIH/GCIH.md)
-* [GCIA - Intrusion Analyst](./GCIA/GCIA.md)
-
-
-### Advanced Exams
-
-* [GSE - Security Expert](./GSE/GSE.md)
+- [ ] 1.[TCP/IP Essentials]
+- [ ] 2.[Critical Controls]
+- [ ] 3.[Access-Control, Password Management]
