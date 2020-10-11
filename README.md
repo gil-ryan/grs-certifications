@@ -4,5 +4,8 @@ So for a while, I had a lot of my certification tracking setup inside separate r
 
 ## Table of Contents
 
-* (Cisco)[]
-* (GIAC)[]
+* [Cisco Systems](./CISCO-SYSTEMS/README.md)
+
+* [Global Assurance](./GIAC/README.md)
+
+* [Microsoft Azure](./MICRO-AZURE/README.md)
