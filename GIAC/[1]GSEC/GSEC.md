@@ -7,7 +7,7 @@ Security is a top IT-certification field. This is a full course of what is neede
 ### Module 1: Security Essentials
 
 - [ ] 1.[TCP/IP Essentials](./1/1.1_TCP-IP.md)
-- [ ] 2.[Critical Controls](./1/#)
+- [ ] 2.[Critical Controls](./1/1.2_IP-ICMP.md)
 - [ ] 3.[Access-Control, Password Management](./1/#)
 - [ ] 4.[Network Security Devices and Device Security](./1/#)
 - [ ] 5.[Web Communication Security](./1/#)
