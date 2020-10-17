@@ -10,7 +10,6 @@ Eventually I will fill this section in with some introductory segment for GIAC. 
 * [GCIH - Incident Handler](./[2]GCIH/GCIH.md)
 * [GCIA - Intrusion Analyst](./[3]GCIA/GCIA.md)
 
-
 ### Advanced Exams
 
 * [GSE - Security Expert](./GSE/GSE.md)
