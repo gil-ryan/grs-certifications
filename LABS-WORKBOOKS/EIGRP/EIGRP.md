@@ -92,3 +92,22 @@ Routing Protocol is "eigrp 100"
     1.2.1.1               90      00:00:09
   Distance: internal 90 external 170
 ```
+
+#### Notice the EIGRP metric weight
+
+### Task 1 (continued)
+
+Hopefully after runnig this command, you should still have the default EIGRP metric k-value weights:
+
+```
+Metric weight K1=1, K2=0, K3=1, K4=0, K5=0
+```
+
+So lets take a quick look at what happens when EIGRP metric weights are mismatched. Again, the terminal will scream at you:
+
+```
+*Nov  1 02:10:10.591: %DUAL-5-NBRCHANGE: EIGRP-IPv4 100: Neighbor 2.4.2.4 (FastEthernet1/0) is down: metric changed
+L2R2(config-router)#
+*Nov  1 02:10:12.275: %DUAL-5-NBRCHANGE: EIGRP-IPv4 100: Neighbor 1.2.1.1 (FastEthernet1/1) is down: K-value mismatch
+L2R2(config-router)#
+```
