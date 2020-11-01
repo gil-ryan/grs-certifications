@@ -10,4 +10,4 @@ So for a while, I had a lot of my certification tracking setup inside separate r
 
 ## Workbooks and Labs
 
-* [CCNP Route](./LABS-WORKBOOKS/EIGRP/README.md)
+* [CCNP Route](./LABS-WORKBOOKS/EIGRP/EIGRP.md)
