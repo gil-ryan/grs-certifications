@@ -5,7 +5,9 @@ So for a while, I had a lot of my certification tracking setup inside separate r
 ## Table of Contents
 
 * [Cisco Systems](./CISCO-SYSTEMS/README.md)
-
 * [Global Assurance](./GIAC/README.md)
-
 * [Microsoft Azure](./MICRO-AZURE/README.md)
+
+## Workbooks and Labs
+
+* [CCNP Route](./LABS-WORKBOOKS/EIGRP/README.md)
