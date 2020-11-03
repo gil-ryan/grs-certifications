@@ -111,3 +111,55 @@ L2R2(config-router)#
 *Nov  1 02:10:12.275: %DUAL-5-NBRCHANGE: EIGRP-IPv4 100: Neighbor 1.2.1.1 (FastEthernet1/1) is down: K-value mismatch
 L2R2(config-router)#
 ```
+
+## Lab 3: EIGRP Metric Manipulation - BW and Delay
+
+* Configure Loopback0 on R1
+
+> ip add 111.111.111.1 255.255.255.248
+
+* Adverise new network on EIGRP process
+
+> network 111.111.111.0 0.0.0.7
+
+### Question
+
+If your objective were to load-balance packets destined to 111.111.111.0 equally across your FastEthernet and Serial interfaces on router R4, do you think there would be a way, by changing __just__ the bandiwdth or __just__ the delay of Serial interface on R4, that you can achieve this goal?
+
+* If you answered "yes": What value would you select as the new bandwidth, or the new delay?
+* If you answered "no": Why do you consider this impossible?
+
+To understand the answer to this, you'll need understand __Feasible Distance__ and the __Total Distance__. Once that is understood, you'll recognize that there is no way to accomplish this task on the Serial interface, since it is much slower than the FastEthernet interface.
+
+EIGRP Metric Formula simplified:
+
+> (k1*[10^7/BW(kpbs)]+k3*[Delay(uSec)/10])*256
+
+#### Output from R4 
+
+```
+L2R4#sho ip eigrp topology 111.111.111.0/29
+EIGRP-IPv4 Topology Entry for AS(100)/ID(2.4.2.4) for 111.111.111.0/29
+  State is Passive, Query origin flag is 1, 1 Successor(s), FD is 158720
+  Descriptor Blocks:
+  2.4.2.2 (FastEthernet2/0), from 2.4.2.2, Send flag is 0x0
+      Composite metric is (158720/156160), route is Internal
+      Vector metric:
+        Minimum bandwidth is 100000 Kbit
+        Total delay is 5200 microseconds
+        Reliability is 255/255
+        Load is 1/255
+        Minimum MTU is 1500
+        Hop count is 2
+        Originating router is 111.111.111.1
+  1.4.1.1 (Serial1/0), from 1.4.1.1, Send flag is 0x0
+      Composite metric is (2297856/128256), route is Internal
+      Vector metric:
+        Minimum bandwidth is 1544 Kbit
+        Total delay is 25000 microseconds
+        Reliability is 255/255
+        Load is 1/255
+        Minimum MTU is 1500
+        Hop count is 1
+        Originating router is 111.111.111.1
+```
