@@ -112,7 +112,7 @@ L2R2(config-router)#
 L2R2(config-router)#
 ```
 
-## Lab 3: EIGRP Metric Manipulation - BW and Delay
+## EIGRP Lab 3: EIGRP Metric Manipulation - BW and Delay
 
 * Configure Loopback0 on R1
 
@@ -163,3 +163,7 @@ EIGRP-IPv4 Topology Entry for AS(100)/ID(2.4.2.4) for 111.111.111.0/29
         Hop count is 1
         Originating router is 111.111.111.1
 ```
+
+This is not the most effective way to influence routing decisions in EIGRP.
+
+## EIGRP Lab-4: Metric Manipulation - Offset-Lists
